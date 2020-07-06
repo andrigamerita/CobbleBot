@@ -1,5 +1,5 @@
 # CobbleBot for Python
-# Copyright 2020, OctoAndri
+# Copyright (C) 2020, OctoAndri
 # https://github.com/andrigamerita/CobbleBot
 # Licensed under the GPLv3 license:
 # https://www.gnu.org/licenses/gpl-3.0.en.html
