@@ -82,4 +82,4 @@ fh.close()
 
 if (usedoptions != int(1)):
     print("\nNOTE: You started the script with default settings.\nStart it with flag -h to see all the available options.")
-print("\nScript completed.")
+print("\nScript completed.\nCobbleBotAHK.ahk saved in the current directory.")
