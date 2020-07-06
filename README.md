@@ -10,21 +10,22 @@ It can be found in the "Source/Python" folder.
 The [_mouse_](https://github.com/boppreh/mouse) and [_keyboard_](https://github.com/boppreh/keyboard) libraries are required for it to work.
 
 Download and install them (running `setup.py install` as admin) from the mentioned repos or from **PyPI**:
-    pip install mouse
-    pip install keyboard
+```pip install mouse```
+```pip install keyboard```
 
 ### How to use
-1. In your Minecraft world/server, create a platform like the one in [this picture](), pointing at the central block.
+1. In your Minecraft world/server, create a platform like the one in [this picture](https://raw.githubusercontent.com/andrigamerita/CobbleBot/master/Doc/Img/Platform-1.png), and point at the central block.
 2. Run the script (in a terminal window, `python CobbleBotPython.py` on Windows or `python3 CobbleBotPython.py` on Linux)
 3. Wait for it to finish! Note that the focus must remain on the Minecraft window with no open menus (like inventory or options) for the Bot to work.
 
-You must also keep in mind that, with the Bot default settings (that is, no switches used)
+You must also keep in mind that, with the Bot default settings (that is, no switches used), the Place/Interact button, the Hotbar 8 button, and the Hotbar 9 button, must be set (respectively) to: Right Mouse button, Number row 8, and Number row 9. 
+A Lava and a Water bucket must also be present (respectively) in the Slot 8 and Slot 9 of the hotbar.
 
 ### Command-line switches
-* -b, --block, Specifies how many blocks have already been generated. Default is 0. Useful if you start the Bot, then stop it, and want to continue using it later on the same cobblestone stairs.
-* -c, --click, Specifies the button that acts as the Place/Interact in Minecraft; default is Right Mouse (MouseRight).
-* -l, --lava, Specifies the button that selects Lava in the hotbar; default is Numrow 8 (eight).
-* -w, --water, Specifies the button that selects Water in the hotbar; default is Numrow 9 (nine).
+* `-b`, `--block`, Specifies how many blocks have already been generated. Default is 0. Useful if you start the Bot, then stop it, and want to continue using it later on the same cobblestone stairs.
+* `-c`, `--click`, Specifies the button that acts as the Place/Interact in Minecraft; default is Right Mouse (MouseRight).
+* `-l`, `--lava`, Specifies the button that selects Lava in the hotbar; default is Numrow 8 (eight).
+* `-w`, `--water`, Specifies the button that selects Water in the hotbar; default is Numrow 9 (nine).
 
 #### Customizing inputs
 TODO.
