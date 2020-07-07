@@ -3,14 +3,14 @@ Minecraft Bot/Macro designed to create Cobblestone (Lava/Water) stairs to grief 
 
 ---
 
-## Native Python version
+## Native Python version (3.8.3, for Windows and GNU/Linux)
 It can be found in the "Source/Python" folder. 
 
 ### Dependencies/Installation
 The [_mouse_](https://github.com/boppreh/mouse) and [_keyboard_](https://github.com/boppreh/keyboard) libraries are required for it to work.
 
 Download and install them (running `setup.py install` as admin) from the mentioned repos or from **PyPI**:
-```pip install mouse```
+```pip install mouse```,
 ```pip install keyboard```
 
 ### How to use
@@ -22,13 +22,24 @@ You must also keep in mind that, with the Bot default settings (that is, no swit
 A Lava and a Water bucket must also be present (respectively) in the Slot 8 and Slot 9 of the hotbar.
 
 ### Command-line switches
-* `-b`, `--block`, Specifies how many blocks have already been generated. Default is 0. Useful if you start the Bot, then stop it, and want to continue using it later on the same cobblestone stairs.
-* `-c`, `--click`, Specifies the button that acts as the Place/Interact in Minecraft; default is Right Mouse (MouseRight).
-* `-l`, `--lava`, Specifies the button that selects Lava in the hotbar; default is Numrow 8 (eight).
-* `-w`, `--water`, Specifies the button that selects Water in the hotbar; default is Numrow 9 (nine).
+* `-b`, `--block`, `[number 0-255]`, Specifies how many blocks have already been generated. Default is 0. Useful if you start the Bot, then stop it, and want to continue using it later on the same cobblestone stairs.
+* `-c`, `--click`, `[button]`, Specifies the button that acts as the Place/Interact in Minecraft; default is Right Mouse (MouseRight).
+* `-l`, `--lava`, `[button]`, Specifies the button that selects Lava in the hotbar; default is Numrow 8 (eight).
+* `-w`, `--water`, `[button]`, Specifies the button that selects Water in the hotbar; default is Numrow 9 (nine).
 
-#### Customizing inputs
-TODO.
+#### Customizing [button] inputs
+* Mouse: Left and Right mouse buttons are supported. More info: [Official Mouse API](https://github.com/boppreh/mouse#api).
+⋅⋅* `MouseLeft`: Left mouse button
+⋅⋅* `MouseRight`: Right mouse button
+* Keyboard: Every key should be supported. See the [Official Keyboard API](https://github.com/boppreh/keyboard#api) for a more in-depth explanation.
+⋅⋅* Letter buttons: the corresponding letter. (Example: button "A" is `a`)
+⋅⋅* Number row buttons: the corresponding number, written in letters. (Example: button "5" is `five`)
+⋅⋅* Any button through scancodes. (Example: Spacebar is `57`)
+⋅⋅* ...
+
+### Known issues
+* On GNU/Linux, there might be some problems installing the mouse and keyboard modules, and that may cause the script to be partially or completely unusable. That's a problem regarding python and the OS.
+* Also on GNU/Linux, the script must be run as root, or with sudo, due to a limitation of the libraries.
 
 ---
 
